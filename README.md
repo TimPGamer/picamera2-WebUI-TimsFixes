@@ -13,6 +13,7 @@ Picamera2 WebUI is a lightweight web interface for the Raspberry Pi camera modul
 - **Camera Control:** Easily configure camera settings such as image rotation, exposure, white balance settings, and many more.
 - **Capture Photos:** Take photos with a single click and save them to the image gallery.
 - **Image Gallery:** View, delete, and download your images in a simple gallery interface.
+- **Physical Controls** Take photos with a physical Button
 
 ## Is this a finished project
 
@@ -55,7 +56,9 @@ cd picamera2-WebUI
 ```bash
 python app.py
 ```
-5. From your broswer, on a device connected to the same network, goto the following address: 'http://**Your IP**:8080/'
+5. From your broswer, on a device connected to the same network, goto one of following addresses: 'http://**Host IP**:8080/' or 'http://**Device Name**:8080'
+
+Note: You will need to replace **Host IP** with the IP of the device running the WebUI and **Device Name** with the name the host device has on your network. Default host name will be **raspberrypi**.
 
 ## Running as a service 
 
@@ -100,7 +103,9 @@ Raspberry Pi Compatibilty:
 
 - Pi 5 (8GB): Perfect
 - Pi 5 (4GB): Perfect
+- Pi 4 (8GB): Perfect
 - Pi 4 (4GB): Perfect
+- Pi 4 (2GB): Perfect
 - Pi 3B: Perfect
 - Pi Zero v2: Slower lower frame rate on feed but very useable
 - Pi Zero v1: Untested
